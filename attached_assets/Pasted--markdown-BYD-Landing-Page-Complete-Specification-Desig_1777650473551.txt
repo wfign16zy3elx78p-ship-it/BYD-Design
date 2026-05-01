@@ -1,0 +1,429 @@
+```markdown
+# BYD Landing Page - Complete Specification
+
+## 🎨 Design System
+
+### Colors
+- **Primary Blue**: `#0055D6` (BYD Tech Blue)
+- **Eco Green**: `#00A86B` (Sustainability)
+- **Deep Navy**: `#0A192F` (Tech sections)
+- **Carbon Slate**: `#1A2332` (Headings)
+- **Graphite**: `#3C4554` (Body text)
+- **Light Ash**: `#F5F7FA` (Backgrounds)
+- **Cloud Gray**: `#E5E7EB` (Borders)
+- **Pure White**: `#FFFFFF`
+
+### Typography
+- **Font**: `BYD Sans, Inter, -apple-system, sans-serif`
+- **Hero**: 42px, weight 600
+- **Section Title**: 32px, weight 600
+- **Model Name**: 28px, weight 500
+- **Body**: 15px, weight 400, line-height 1.47
+- **Button**: 15px, weight 500
+
+### Spacing
+- Section padding: 80px vertical
+- Card gap: 24px
+- Button gap: 12px
+- Border radius: 6px (buttons), 8px (cards)
+
+---
+
+## 📄 Page Structure
+
+### 1. Navigation
+```
+Logo: BYD (left)
+Menu: Dynasty Series | Ocean Series | Technology | Sustainability | Charging | Support (center)
+Icons: Search | Globe | Account (right)
+Style: White bg, sticky, frosted glass on scroll
+```
+
+---
+
+### 2. Hero Section - DM-i Super Hybrid
+**Layout**: Full viewport (100vh)
+
+**Content**:
+```
+Background: Dramatic BYD vehicle front view (dark)
+Overlay: Dark gradient for text legibility
+
+Badge: "1,000km total range"
+Headline: "DM-i Super Hybrid"
+Subtitle: "Efficiency Meets Performance"
+
+Buttons (centered, horizontal):
+  [Explore Technology] - Blue #0055D6
+  [Learn More] - White outline
+
+Carousel: Left/right arrows + 3 dots below
+```
+
+---
+
+### 3. Model Showcase
+**Layout**: Full-width carousel
+
+**Card Structure**:
+```
+┌─────────────────────────────────────────┐
+│  [Large vehicle image - 600px height]  │
+│                                          │
+│  Badge: "Ocean Series | Sport Sedan"   │
+│                                          │
+│  BYD Seal                               │
+│  From $45,900                           │
+│                                          │
+│  570km Range | 230kW | 3.8s 0-100km/h  │
+│                                          │
+│  [Order Now - Blue] [Learn More]       │
+└─────────────────────────────────────────┘
+
+Carousel indicators: 5 dots below
+```
+
+**Models to include**:
+1. BYD Seal (Ocean Series)
+2. BYD Tang (Dynasty Series)
+3. BYD Atto 3
+4. BYD Dolphin
+5. BYD Han
+
+---
+
+### 4. Special Offers
+**Layout**: 2-column grid
+
+**Left Card - Current Offers**:
+```
+Image: BYD vehicle lineup
+Badge: "Launch Incentives"
+Title: "Current Offers"
+Text: "Explore limited-time offers on BYD vehicles including financing deals and trade-in bonuses"
+CTA: [Learn More]
+```
+
+**Right Card - Community Heroes**:
+```
+Image: 3 BYD vehicles (red, white, blue)
+Badge: "Essential Workers Program"
+Title: "Community Heroes"
+Text: "$1,000 off for healthcare workers, teachers, first responders, and military personnel"
+CTA: [Learn More]
+```
+
+**Card specs**: White bg, 8px radius, 24px padding, subtle shadow
+
+---
+
+### 5. Advanced Technology
+
+**Section 1 - e-Platform 3.0** (2-column):
+```
+Left (50%):
+  [Technical diagram visualization]
+  Height: 400px
+  Light gray gradient bg
+
+Right (50%):
+  Deep Navy bg (#0A192F)
+  Padding: 48px
+  
+  Icon: Chip (blue)
+  Title: "e-Platform 3.0"
+  Subtitle: "Next-Generation Electric Architecture"
+  
+  Features:
+    • Cell-to-Body Technology
+    • 8-in-1 Electric Powertrain
+    • Ultra-Fast Charging Capability
+  
+  Buttons: [Explore e-Platform 3.0] [Learn More]
+```
+
+**Section 2 - DM-i Super Hybrid** (2-column, reversed):
+```
+Left (50%):
+  White bg
+  Padding: 48px
+  
+  Icon: Lightning (blue)
+  Title: "DM-i Super Hybrid"
+  Subtitle: "Efficiency Meets Performance"
+  
+  Features:
+    • 1,000km Total Range
+    • Dual Power System
+    • Intelligent Energy Management
+  
+  Buttons: [Explore DM-i] [Learn More]
+
+Right (50%):
+  [BYD vehicle with hood open]
+  Height: 400px
+  Dark dramatic lighting
+```
+
+---
+
+### 6. Safety Features - Travel Safer
+**Layout**: Full-bleed section
+
+```
+Background: BYD SUV on mountain road
+Height: 600px
+Overlay: Dark gradient
+
+Content (left-aligned):
+  Title: "Travel Safer, Arrive Confident"
+  Subtitle: "DiPilot Advanced Driver Assistance Systems"
+  
+  Features Grid (2x2):
+    ✓ Adaptive Cruise Control
+    ✓ Lane Keeping Assist
+    ⚠ Automatic Emergency Braking
+    ✓ 360° Camera System
+  
+  Buttons: [View Safety Features] [Learn More]
+```
+
+⚠️ **IMPORTANT**: Use BYD vehicle, NOT Honda!
+
+---
+
+### 7. Premium Features
+**Layout**: 2-column
+
+```
+Left (50%):
+  [BYD interior - rotating touchscreen]
+  Height: 500px
+
+Right (50%):
+  Light Ash bg (#F5F7FA)
+  Padding: 48px
+  
+  Title: "Premium Features. Standard Equipment."
+  Subtitle: "Experience luxury and technology in every BYD vehicle"
+  
+  Feature List (with icons):
+    📱 Rotating Touchscreen Display
+       15.6" high-resolution display
+    
+    🔊 Premium Sound System
+       Immersive 12-speaker audio
+    
+    🌡️ Heated & Ventilated Seats
+       Year-round comfort
+    
+    ☀️ Panoramic Sunroof
+       Open-air driving experience
+    
+    🔋 Wireless Charging
+       Convenient device charging
+  
+  CTA: [Explore Interior]
+```
+
+---
+
+### 8. Charging Network
+**Layout**: Full-width
+
+```
+Title: "Charging Network"
+Subtitle: "Access the extensive charging network compatible with all BYD vehicles via CCS2 standard"
+
+Map Container:
+  Full-width, 500px height
+  Light gray bg
+  Interactive map placeholder
+  Search bar: "Search by address or zip code..."
+  Zoom controls (+/-)
+  "Find Me" button
+
+Stats Bar:
+  ⚡ 50,000+              🔌 15,000+
+  Compatible Fast         Destination Chargers
+  Chargers
+  
+  [View Network Map] [Learn More]
+```
+
+---
+
+### 9. Energy Solutions
+**Layout**: 2-column grid
+
+**Left Card - Energy Storage**:
+```
+Image: Earth from space at night
+Height: 300px
+
+Title: "Energy Storage Systems"
+Subtitle: "Power Your Business and Reduce Energy Costs"
+
+Text: "Large-scale battery energy storage solutions for commercial and industrial applications"
+
+Features:
+  • Commercial & Industrial
+  • Grid-Scale Storage
+  • Renewable Integration
+
+Buttons: [Learn More] [Discover]
+Carousel dots: ● ○
+```
+
+**Right Card - Battery Recycling**:
+```
+Image: Battery recycling facility
+Height: 300px
+
+Title: "Battery Recycling"
+Subtitle: "Closed-Loop Sustainability"
+
+Text: "Advanced battery recycling with 95% material recovery rate"
+
+Features:
+  • 95% Material Recovery
+  • Zero Waste Processing
+  • Sustainable Sourcing
+
+Buttons: [Learn More] [Discover]
+```
+
+---
+
+### 10. Footer
+
+**Navigation (5 columns)**:
+```
+Vehicles          Technology        Ownership         Company           Support
+Seal              Blade Battery     Charging          About BYD         Contact Us
+Tang              e-Platform 3.0    Financing         Sustainability    FAQs
+Atto 3            DM-i Hybrid       Warranty          Careers           Recalls
+Dolphin           DiPilot           Service           News              Dealer Locator
+Han
+Commercial
+```
+
+**Social Icons**: Facebook | Instagram | Twitter | YouTube | LinkedIn
+
+**Legal Text**:
+```
+Price excludes destination charge, taxes, and title. Options and features subject to change.
+
+Terms and conditions apply. Financing subject to credit approval.
+
+BYD © 2026
+```
+
+---
+
+### 11. Persistent Bottom Bar
+```
+Fixed position, bottom: 0
+Height: 64px
+White bg, top border
+
+Left:
+  💬 Ask a question...
+  [Send icon]
+
+Right:
+  📅 [Schedule Test Drive] - Blue button
+
+Mobile: Show only "Schedule Test Drive" button
+```
+
+---
+
+## 🎯 Component Specs
+
+### Buttons
+
+**Primary**:
+```css
+Background: #0055D6
+Text: #FFFFFF
+Padding: 10px 24px
+Border radius: 6px
+Height: 44px min
+Hover: brightness(1.08)
+Transition: 0.3s ease
+```
+
+**Secondary**:
+```css
+Background: transparent
+Border: 2px solid #0055D6
+Text: #0055D6
+Hover: bg #F0F4FF
+```
+
+### Cards
+```css
+Background: #FFFFFF
+Border: 1px solid #E5E7EB
+Radius: 8px
+Shadow: 0 2px 8px rgba(0,0,0,0.04)
+Hover: 0 4px 16px rgba(0,0,0,0.08)
+Transition: 0.3s ease
+```
+
+---
+
+## 📱 Responsive
+
+**Mobile (<768px)**:
+- Hamburger menu
+- Stack all columns vertically
+- Hero text: 28px
+- CTAs: Vertical stack
+- Section padding: 32px
+
+**Tablet (768-1024px)**:
+- 2-column grids
+- Section padding: 48px
+
+**Desktop (1024px+)**:
+- Full layout
+- Max width: 1440px centered
+- Section padding: 80px
+
+---
+
+## ⚡ Interactions
+
+**All transitions**: 0.3s ease-in-out
+
+**Hover effects**:
+- Buttons: Brightness increase
+- Cards: Lift with shadow
+- Links: Color change to blue + underline
+
+**Carousel**:
+- Smooth scroll with snap
+- Arrows fade in on hover
+- Dots scale active to 1.2x
+
+---
+
+## ✅ Checklist
+
+- [ ] Replace Honda image with BYD vehicle
+- [ ] Use full-width carousel for models (not 2 cards)
+- [ ] Simplify tech section (remove bullet overload)
+- [ ] Increase section spacing to 80px
+- [ ] Use BYD blue (#0055D6) consistently
+- [ ] Add frosted glass nav on scroll
+- [ ] Implement lazy loading for images
+- [ ] Add carousel navigation
+- [ ] Test mobile responsiveness
+- [ ] Optimize images (WebP format)
+
+---
+
+**Ready to build! 🚀**
+```

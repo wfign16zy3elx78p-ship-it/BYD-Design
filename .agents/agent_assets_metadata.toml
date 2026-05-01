@@ -1,0 +1,85 @@
+uploads = []
+
+[[generated]]
+id = "4GNqeXDZAHJ7ItOOZkt1k"
+uri = "file://artifacts/byd-landing/public/hero.png"
+type = "image"
+title = "BYD DM-i Hero"
+
+[[generated]]
+id = "KDkQCxNQGsBhDID6i4Fy1"
+uri = "file://artifacts/byd-landing/public/seal.png"
+type = "image"
+title = "BYD Seal"
+
+[[generated]]
+id = "zf8hSJAPdz_OUcQDZ31Rq"
+uri = "file://artifacts/byd-landing/public/tang.png"
+type = "image"
+title = "BYD Tang"
+
+[[generated]]
+id = "rVxD_5HxSquaV6Gqj088H"
+uri = "file://artifacts/byd-landing/public/atto3.png"
+type = "image"
+title = "BYD Atto 3"
+
+[[generated]]
+id = "7LhrQy59ViIAiYh76QhvG"
+uri = "file://artifacts/byd-landing/public/dolphin.png"
+type = "image"
+title = "BYD Dolphin"
+
+[[generated]]
+id = "1hdO4Peq2DYWrULxuLQze"
+uri = "file://artifacts/byd-landing/public/han.png"
+type = "image"
+title = "BYD Han"
+
+[[generated]]
+id = "_eHaaKp9vOJQhfscxV_YR"
+uri = "file://artifacts/byd-landing/public/offers-1.png"
+type = "image"
+title = "Offers Lineup"
+
+[[generated]]
+id = "THrgnIcMqbrMQ9GmilGk5"
+uri = "file://artifacts/byd-landing/public/offers-2.png"
+type = "image"
+title = "Offers Heroes"
+
+[[generated]]
+id = "zljS7f8N8TaETE571nVTf"
+uri = "file://artifacts/byd-landing/public/eplatform.png"
+type = "image"
+title = "e-Platform 3.0"
+
+[[generated]]
+id = "O6b1AnajOtid2m7ZCW5O-"
+uri = "file://artifacts/byd-landing/public/engine.png"
+type = "image"
+title = "DM-i Engine Bay"
+
+[[outputs]]
+id = "icVHdOw8UZJuVeh6yNJPj"
+uri = "file://artifacts/byd-landing/public/safety.jpg"
+type = "image"
+title = "dramatic mountain road driving landscape photography"
+
+[[outputs]]
+id = "UAU-DlyDT1A4dZPhkpsI2"
+uri = "file://artifacts/byd-landing/public/interior.jpg"
+type = "image"
+title = "luxury car interior dashboard display screen"
+
+[[outputs]]
+id = "AJgHET4bUl3Wm_WpHDvog"
+uri = "file://artifacts/byd-landing/public/energy.jpg"
+type = "image"
+title = "Earth from space at night city lights energy"
+
+[[outputs]]
+id = "b_P9qAOmJUGeUYeSJ2Ej4"
+uri = "file://artifacts/byd-landing/public/recycling.jpg"
+type = "image"
+title = "industrial factory technology facility"
