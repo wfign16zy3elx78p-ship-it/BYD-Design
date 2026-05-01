@@ -11,7 +11,9 @@ import { Link } from "wouter";
 // Fallback image if needed
 import heroFallback from "@assets/image_1777650465679.png";
 
-const NAV_LINKS = ["Dynasty Series", "Ocean Series", "Technology", "Sustainability", "Charging", "Support"];
+const NAV_LINKS = ["Vehicles", "Energy", "Charging", "Discover", "Shop", "Support"];
+const HAMBURGER_LINKS = ["Vehicles", "Energy", "Charging", "Discover", "Shop", "Support"];
+const REGION_OPTIONS = ["United States"];
 
 const MODELS = [
   {
@@ -81,6 +83,7 @@ const FadeIn = ({ children, delay = 0, className = "" }: { children: React.React
 export default function Landing() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
   
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" });
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -118,10 +121,15 @@ export default function Landing() {
             BYD
           </div>
           
-          {/* Desktop Nav */}
+{/* Desktop Nav - Show all links including Support */}
           <nav className="hidden md:flex gap-8 text-sm font-medium">
             {NAV_LINKS.map(link => (
-              <a key={link} href="#" className="hover:opacity-70 transition-opacity">
+              <a 
+                key={link} 
+                href="#" 
+                className="hover:opacity-70 transition-opacity"
+                onClick={link === "Support" ? (e) => { e.preventDefault(); setHamburgerMenuOpen(!hamburgerMenuOpen); } : undefined}
+              >
                 {link}
               </a>
             ))}
@@ -144,7 +152,7 @@ export default function Landing() {
         </div>
       </header>
 
-      {/* Mobile Menu */}
+{/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div 
@@ -158,6 +166,70 @@ export default function Landing() {
                 {link}
               </a>
             ))}
+            
+            {/* Region & Language for Mobile */}
+            <div className="mt-auto border-t border-gray-100 pt-4">
+              <div className="flex items-center gap-2 py-2">
+                <Globe size={18} />
+                <span className="text-sm">{REGION_OPTIONS[0]}</span>
+                <ChevronRight size={14} />
+              </div>
+              <div className="flex items-center gap-2 py-2">
+                <span className="text-sm">English</span>
+                <ChevronRight size={14} />
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Hamburger Menu Overlay */}
+      <AnimatePresence>
+        {hamburgerMenuOpen && (
+          <motion.div 
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-y-0 right-0 z-50 w-[320px] bg-white shadow-xl pt-16 px-6 flex flex-col text-[#1A2332] hidden md:flex"
+          >
+            {/* Close Button */}
+            <button 
+              className="absolute top-4 right-4 p-2"
+              onClick={() => setHamburgerMenuOpen(false)}
+            >
+              <X size={24} />
+            </button>
+            
+            {/* Menu Items with > */}
+            <div className="flex flex-col gap-0">
+              {HAMBURGER_LINKS.map((link, index) => (
+                <a 
+                  key={link} 
+                  href="#" 
+                  className="flex items-center justify-between py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors"
+                  onClick={() => setHamburgerMenuOpen(false)}
+                >
+                  <span className="text-[15px] font-medium">{link}</span>
+                  <ChevronRight size={18} className="text-gray-400" />
+                </a>
+              ))}
+            </div>
+            
+            {/* Region & Language at bottom */}
+            <div className="mt-auto border-t border-gray-100 pt-6 pb-6">
+              <div className="flex items-center justify-between py-3">
+                <div className="flex items-center gap-2">
+                  <Globe size={18} />
+                  <span className="text-[14px]">{REGION_OPTIONS[0]}</span>
+                </div>
+                <ChevronRight size={16} className="text-gray-400" />
+              </div>
+              <div className="flex items-center justify-between py-3">
+                <span className="text-[14px]">English</span>
+                <ChevronRight size={16} className="text-gray-400" />
+              </div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
